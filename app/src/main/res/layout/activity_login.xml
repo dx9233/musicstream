@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="24dp"
+    android:background="#0E0E0E">
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/logo"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:text="Let's get you in"
+        android:textSize="26sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_marginBottom="32dp"/>
+
+    <Button
+        android:id="@+id/googleLogin"
+        android:text="Continue with Google"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="12dp"/>
+
+    <Button
+        android:id="@+id/facebookLogin"
+        android:text="Continue with Facebook"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="12dp"/>
+
+    <Button
+        android:id="@+id/appleLogin"
+        android:text="Continue with Apple"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:text="or"
+        android:textColor="#AAAAAA"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:id="@+id=passwordLogin"
+        android:text="Log in with a password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:backgroundTint="#00A8A8"
+        android:textColor="#FFFFFF"/>
+
+    <TextView
+        android:text="Don't have an account? Sign Up"
+        android:textColor="#AAAAAA"
+        android:layout_marginTop="20dp"/>
+
+</LinearLayout>
