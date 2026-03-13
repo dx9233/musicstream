@@ -1,63 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center_horizontal"
     android:padding="24dp"
-    android:background="#0E0E0E">
+    android:background="#121111">
 
     <ImageView
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:src="@drawable/logo"
-        android:layout_marginBottom="16dp"/>
+        android:layout_width="325dp"
+        android:layout_height="254dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/musium_logo" />
 
     <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
         android:text="Let's get you in"
-        android:textSize="26sp"
+        android:textSize="50sp"
         android:textColor="#FFFFFF"
         android:textStyle="bold"
-        android:layout_marginBottom="32dp"/>
+        android:layout_marginBottom="47sp"/>
 
     <Button
         android:id="@+id/googleLogin"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="12dp"
         android:text="Continue with Google"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginBottom="12dp"/>
-
-    <Button
-        android:id="@+id/facebookLogin"
-        android:text="Continue with Facebook"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginBottom="12dp"/>
+        android:background="#1E1E1E"
+        android:textColor="#DBE7E8" />
 
     <Button
         android:id="@+id/appleLogin"
-        android:text="Continue with Apple"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginBottom="20dp"/>
+        android:layout_height="60dp"
+        android:layout_marginBottom="20dp"
+        android:text="Continue with Apple"
+        android:background="#1E1E1E"
+        android:textColor="#DBE7E8" />
+
+    <Button
+        android:id="@+id/facebookLogin"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="12dp"
+        android:text="Continue with Facebook"
+        android:background="#1E1E1E"
+        android:textColor="#DBE7E8"/>
+
+    <Button
+        android:id="@+id=passwordLogin"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:backgroundTint="#00A8A8"
+        android:text="Log in with a password"
+        android:textColor="#FFFFFF"
+        />
 
     <TextView
         android:text="or"
         android:textColor="#AAAAAA"
         android:layout_marginBottom="20dp"/>
 
-    <Button
-        android:id="@+id=passwordLogin"
-        android:text="Log in with a password"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:backgroundTint="#00A8A8"
-        android:textColor="#FFFFFF"/>
-
     <TextView
         android:text="Don't have an account? Sign Up"
-        android:textColor="#AAAAAA"
-        android:layout_marginTop="20dp"/>
+        android:textColor="№FFFFFF"
+        android:layout_marginTop="16dp" />
 
 </LinearLayout>
