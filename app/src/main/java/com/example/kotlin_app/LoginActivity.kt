@@ -1,5 +1,9 @@
 package com.example.kotlin_app
 
+import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
+import android.widget.Button
+
 class LoginActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -12,19 +16,15 @@ class LoginActivity : AppCompatActivity() {
         val passwordBtn = findViewById<Button>(R.id.passwordLogin)
 
         googleBtn.setOnClickListener {
-            // Logic Google login
         }
 
         facebookBtn.setOnClickListener {
-            // Facebook login
         }
 
         appleBtn.setOnClickListener {
-            // Apple login
         }
 
         passwordBtn.setOnClickListener {
-            // переход к экрану логина
         }
     }
 }
