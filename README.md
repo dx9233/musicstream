@@ -1,6 +1,6 @@
 # Music Stream Mobile App
 
-![Music Stream](./screenshot.png)
+<img src="./screenshot.png" width="200" height="400">
 
 - [Design](https://www.figma.com/design/gpxvbZp7hljz0yXqt7bS6m/Musium---Music-App-UI--Community-?node-id=182-267&t=PdAfcKmAMlLUfR09-1)
 
