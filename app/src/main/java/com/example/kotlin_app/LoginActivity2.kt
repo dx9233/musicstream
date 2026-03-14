@@ -13,6 +13,11 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.kotlin_app.ui.theme.KotlinAppTheme
+import androidx.compose.foundation.Image
+import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.graphics.Color
+import androidx.compose.foundation.background
+import androidx.compose.material3.Text
 
 class LoginActivity2 : ComponentActivity() {
 
@@ -33,43 +38,72 @@ fun LoginScreen() {
     Column(
         modifier = Modifier
             .fillMaxSize()
-            .padding(24.dp),
+            .background(Color(0xFF121111))
+            .padding(52.dp),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
 
         Spacer(modifier = Modifier.height(80.dp))
 
+        Image(
+            painter = painterResource(R.drawable.musium_logo),
+            contentDescription = "logo",
+            modifier = Modifier.size(325.dp)
+        )
+
         Text(
             text = "Let's get you in",
-            fontSize = 26.sp,
-            fontWeight = FontWeight.Bold
+            fontSize = 38.sp,
+            fontWeight = FontWeight.Bold,
+            color=Color.White
         )
 
         Spacer(modifier = Modifier.height(40.dp))
 
         Button(
             onClick = {},
-            modifier = Modifier.fillMaxWidth()
+            modifier = Modifier.fillMaxWidth(),
+            colors = ButtonDefaults.buttonColors(
+                containerColor = Color(0xFF1E1E1E),
+                contentColor = Color.White
+            )
         ) {
-            Text("Continue with Google")
+            Text(
+                text = "Continue with Google",
+                fontSize = 16.sp
+            )
         }
 
         Spacer(modifier = Modifier.height(12.dp))
 
         Button(
             onClick = {},
-            modifier = Modifier.fillMaxWidth()
+            modifier = Modifier.fillMaxWidth(),
+            colors = ButtonDefaults.buttonColors(
+                containerColor = Color(0xFF1E1E1E),
+                contentColor = Color.White
+            )
         ) {
-            Text("Continue with Facebook")
+            Text(
+                text = "Continue with Facebook",
+                fontSize = 16.sp
+            )
         }
 
         Spacer(modifier = Modifier.height(12.dp))
 
         Button(
             onClick = {},
-            modifier = Modifier.fillMaxWidth()
+            modifier = Modifier.fillMaxWidth(),
+            colors = ButtonDefaults.buttonColors(
+                containerColor = Color(0xFF1E1E1E),
+                contentColor = Color.White
+            )
         ) {
-            Text("Continue with Apple")
+            Text(
+                text = "Continue with Apple",
+                fontSize = 16.sp
+            )
         }
 
         Spacer(modifier = Modifier.height(20.dp))
@@ -80,9 +114,16 @@ fun LoginScreen() {
 
         Button(
             onClick = {},
-            modifier = Modifier.fillMaxWidth()
+            modifier = Modifier.fillMaxWidth(),
+            colors = ButtonDefaults.buttonColors(
+                containerColor = Color(0xFF06A0B5),
+                contentColor = Color.White
+            )
         ) {
-            Text("Log in with a password")
+            Text(
+                text = "Log in with a password",
+                fontSize = 16.sp
+            )
         }
     }
 }
