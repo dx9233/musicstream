@@ -1,4 +1,4 @@
-package com.example.kotlin_app
+package com.example.music_stream
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

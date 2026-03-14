@@ -1,4 +1,4 @@
-package com.example.kotlin_app
+package com.example.music_stream
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -12,14 +12,15 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.compose.ui.tooling.preview.Preview
-import com.example.kotlin_app.ui.theme.KotlinAppTheme
+import com.example.music_stream.ui.theme.KotlinAppTheme
 import androidx.compose.foundation.Image
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.graphics.Color
 import androidx.compose.foundation.background
 import androidx.compose.material3.Text
+import com.example.music_stream.R.drawable.musium_logo
 
-class LoginActivity2 : ComponentActivity() {
+class LoginActivity : ComponentActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -46,7 +47,7 @@ fun LoginScreen() {
         Spacer(modifier = Modifier.height(80.dp))
 
         Image(
-            painter = painterResource(R.drawable.musium_logo),
+            painter = painterResource(musium_logo),
             contentDescription = "logo",
             modifier = Modifier.size(325.dp)
         )

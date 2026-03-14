@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.kotlin_app"
+    namespace = "com.example.music_stream"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.example.kotlin_app"
+        applicationId = "com.example.music_stream"
         minSdk = 30
         targetSdk = 36
         versionCode = 1
